@@ -1,0 +1,29 @@
+<p>
+  add-contact works!
+</p>
+<br /><br />
+<div class="col-md-6 col-md-offset-2">
+  <h2>Add contact</h2> <br />
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group"> <label for="contactName">contact Name:</label> <input formControlName="contactName"
+        placeholder="contact Name" name="contactName" class="form-control" id="contactName">
+      <div *ngIf="submitted && addForm.controls.contactName.errors" class="error">
+        <div class="text-danger" *ngIf="addForm.controls.contactName.errors.required">contactName is required</div>
+      </div>
+    </div>
+    <div class="form-group"> <label for="">phone No:</label> <input formControlNo="phone No"
+        placeholder="phone No" name="phone No" class="form-control" id="phone No">
+      <div *ngIf="submitted && addForm.controls.phoneNo.errors" class="error">
+        <div class="text-danger" *ngIf="addForm.controls.phoneNo.errors.required">phoneNo is required</div>
+      </div>
+    </div>
+    <div class="form-group"> <label for="email">Email address:</label> <input type="email" formControlName="email"
+        placeholder="Email" name="email" class="form-control" id="email">
+      <div *ngIf="submitted && addForm.controls.email.errors" class="error">
+        <div class="text-danger" *ngIf="addForm.controls.email.errors.required">Email is required</div>
+      </div>
+    </div> <button class="btn btn-success">Save</button>&nbsp; &nbsp; <button class="btn btn-danger"
+      type="reset">Cancel</button> &nbsp; &nbsp; <a class="btn btn-warning" href="/list-contact">Back to List</a>
+    <br /><br />
+  </form>
+</div>

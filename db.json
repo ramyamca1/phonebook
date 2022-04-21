@@ -1,0 +1,36 @@
+{
+  "Contacts": [
+    {
+    "id": 1,
+    "contactName": "Siva",
+    "phoneNo":9134265879,
+    "email": "siva@gmail.com"
+    },
+    {
+    "id": 2,
+    "contactName": "Ravi",
+    "phoneNo":9848022338,
+    "email": "ravi@gmail.com"
+    },
+    {
+    "id": 3,
+    "contactName": "Haritha",
+    "phoneNo": 9154672349,
+    "email": "haritha00@gmail.com"
+    },
+    {
+    "id": 4,
+    "contactName": "Sitha",
+    "phoneNo":9945673428,
+    "email": "sitha@gmail.com"
+    },
+    {
+    "id": 5,
+    "contactName": "Ram",
+    "phoneNo":9786543257,
+    "email": "ram@gmail.com"
+    }
+  
+    
+  ]
+}
